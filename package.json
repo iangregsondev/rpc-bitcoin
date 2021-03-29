@@ -25,6 +25,9 @@
     "type": "git",
     "url": "https://github.com/iangregsondev/rpc-bitcoin.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "RPC",
     "Bitcoin",

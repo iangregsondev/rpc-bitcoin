@@ -1,7 +1,7 @@
 {
-  "name": "rpc-bitcoin",
-  "version": "2.0.0",
-  "description": "A TypeScript library to make RPC and HTTP REST requests to Bitcoin Core",
+  "name": "@iangregsondev/rpc-bitcoin",
+  "version": "1.0.0",
+  "description": "A TypeScript library to make RPC and HTTP REST requests to Bitcoin SV",
   "main": "build/index.js",
   "type": "commonjs",
   "engines": {
@@ -25,18 +25,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vansergen/rpc-bitcoin.git"
+    "url": "https://github.com/iangregsondev/rpc-bitcoin.git"
   },
   "keywords": [
     "RPC",
-    "Bitcoin"
+    "Bitcoin",
+    "BSV"
   ],
-  "author": "Sergey Bakulin",
+  "author": "Ian Gregson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vansergen/rpc-bitcoin/issues"
+    "url": "https://github.com/iangregsondev/rpc-bitcoin/issues"
   },
-  "homepage": "https://github.com/vansergen/rpc-bitcoin#readme",
+  "homepage": "https://github.com/iangregsondev/rpc-bitcoin",
   "devDependencies": {
     "@types/mocha": "^7.0.2",
     "@typescript-eslint/eslint-plugin": "^2.25.0",
@@ -71,10 +72,6 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  },
-  "funding": {
-    "type": "Coinbase Commerce",
-    "url": "https://commerce.coinbase.com/checkout/89a70363-3d1f-4aa0-8d2a-1424ed9e87ee"
   },
   "snyk": true
 }

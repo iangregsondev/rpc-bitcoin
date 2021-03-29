@@ -71,6 +71,18 @@ export type GetBlockTemplateParams = {
   };
 };
 
+export type GetMiningCandidateParams = {
+  provide_coinbase_tx?: boolean;
+};
+
+export type SubmitMiningSolutionParams = {
+  id: string;
+  nonce: string;
+  coinbase: string;
+  time: number;
+  version: number;
+};
+
 export type PrioritiseTransactionParams = TxId & { fee_delta: number };
 
 export type HexData = { hexdata: string };
@@ -654,6 +666,13 @@ export class RPCClient extends RESTClient {
   }
 
   /**
+   * @description It returns data needed to construct a block to work on.
+   */
+  getminingcandidate(options: GetMiningCandidateParams) {
+    return this.rpc("getminingcandidate", options);
+  }
+
+  /**
    * @description Returns a json object containing mining-related information.
    */
   getmininginfo() {
@@ -679,6 +698,13 @@ export class RPCClient extends RESTClient {
    */
   submitblock(options: HexData) {
     return this.rpc("submitblock", options);
+  }
+
+  /**
+   * @description Attempts to submit new block to network.
+   */
+  submitminingsolution(options: SubmitMiningSolutionParams) {
+    return this.rpc("submitminingsolution", [options]);
   }
 
   /**

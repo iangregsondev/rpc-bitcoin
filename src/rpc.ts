@@ -449,6 +449,13 @@ export class RPCClient extends RESTClient {
   }
 
   /**
+   * @description Returns an object containing various state info
+   */
+  getinfo() {
+    return this.rpc("getinfo");
+  }
+
+  /**
    * @description Returns an object containing various state info regarding blockchain processing.
    */
   getblockchaininfo() {

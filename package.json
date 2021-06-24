@@ -1,6 +1,6 @@
 {
   "name": "@iangregsondev/rpc-bitcoin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A TypeScript library to make RPC and HTTP REST requests to Bitcoin SV",
   "main": "build/index.js",
   "type": "commonjs",
